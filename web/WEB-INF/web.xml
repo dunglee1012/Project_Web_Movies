@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ListMovie</servlet-name>
+        <servlet-class>controller.ListMovieServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Add Listing Page</servlet-name>
+        <servlet-class>controller.ListAllCategory</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Insert New Movie</servlet-name>
+        <servlet-class>controller.InsertServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Delete Movie</servlet-name>
+        <servlet-class>controller.DeleteMoviesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Update Servlet</servlet-name>
+        <servlet-class>controller.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>controller.SearchServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ForgetController</servlet-name>
+        <servlet-class>controller.ForgetController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>listByCategory</servlet-name>
+        <servlet-class>controller.ListByCategory</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WatchMovieServlet</servlet-name>
+        <servlet-class>controller.WatchMovieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListMovie</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Add Listing Page</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Insert New Movie</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Delete Movie</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Update Servlet</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ForgetController</servlet-name>
+        <url-pattern>/forget</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>listByCategory</servlet-name>
+        <url-pattern>/listcategory</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>WatchMovieServlet</servlet-name>
+        <url-pattern>/watch</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
