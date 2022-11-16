@@ -36,7 +36,7 @@ public class LoginServlet extends HttpServlet {
 
         if (users == null) {
             pr.println("<script type=\"text/javascript\">");
-            pr.println("alert('Username or password incorrect');");
+            pr.println("alert('Username or password is incorrect');");
             pr.println("location='login.jsp';");
             pr.println("</script>");
         } else {
